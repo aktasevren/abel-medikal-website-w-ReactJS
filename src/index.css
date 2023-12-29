@@ -316,7 +316,7 @@ body {
 
 
 .lastnews-card {
-  margin-inline: 35px;
+  padding: 25px;
   margin-bottom: 25px !important;
   margin-top: 25px !important;
   min-width: 300px;
@@ -390,6 +390,7 @@ body {
 .products-div {
   height: 300px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 992px) {
@@ -404,6 +405,7 @@ body {
   text-decoration: none;
   color: grey;
   margin: 5px;
+  font-size: 14px;
 }
 
 .products-navlink:hover {
@@ -421,9 +423,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 72px;
-  color: red;
+  color: white;
   font-weight: 600;
-  text-shadow: white 5px 0 10px;
+  text-shadow: black 5px 0 10px;
+  text-align: center;
 }
 
 
@@ -437,6 +440,7 @@ body {
     color: red;
     font-weight: 600;
     text-shadow: white 5px 0 10px;
+
   }
 }
 
@@ -451,4 +455,23 @@ body {
     font-weight: 600;
     text-shadow: white 5px 0 10px;
   }
+}
+
+
+.caro-images {
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+.products-icon {
+  width: 42px;
+  float: left;
+  margin-right: 10px;
 }

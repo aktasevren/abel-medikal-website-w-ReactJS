@@ -13,15 +13,15 @@ export default function CarouselComp() {
         <Carousel data-bs-theme="dark">
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="caro-images"
                     src={caro1}
                     alt="First slide"
                 />
-                <div className="centered-caro-text">ÇÖZÜM ORTAĞINIZ OLMAYI HEDEFLİYORUZ</div>
+                <div className="centered-caro-text">ÇÖZÜM ORTAĞINIZ             OLMAYI HEDEFLİYORUZ</div>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="caro-images"
                     src={caro2}
                     alt="First slide"
                 />
@@ -30,7 +30,7 @@ export default function CarouselComp() {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="caro-images"
                     src={caro3}
                     alt="First slide"
                 />
