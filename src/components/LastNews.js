@@ -1,49 +1,66 @@
 
-import { Card, Container, CardGroup } from "react-bootstrap"
-
-
-
+import { Card, Container, CardGroup, CardText, CardTitle, CardImg, CardBody } from "react-bootstrap"
 
 export default function Lastnews() {
 
-
     return (
         <div>
-
             <Container>
-                <h3 className="text-center mt-5">SON HABERLER</h3>
+                <h3 className="text-center m-5">SON HABERLER</h3>
+
                 <CardGroup>
-                    <Card className="lastnews-card">
-                        <Card.Img variant="top" className="lastnews-img" src="https://www.biomedya.com/uploads/haberler-2/biomedya_yeni_bir_sensor_bandi_hayati_bir_hormonu_izleyebilir.jpg" />
-                        <Card.Body>
-                            <Card.Title>Yeni bir sensör bandı, hayati bir hormonu izleyebilir</Card.Title>
-                            <Card.Text>
-                                Giyilebilir sensörler halihazırda çeşitli önemli sağlık özelliklerini izleyebilmektedir. Ancak özellikle kadınlar için hormonal seviyeleri tespit etme konusunda hala çok yetersizler.
-                            </Card.Text>
-                        </Card.Body>
+                    <Card>
+                        <CardImg
+                            alt="Card image cap"
+                            src="https://www.biomedya.com/uploads/haberler/biomedya_robotik-el-ile-dokunma-hissi.png"
+                            top
+                            width="100%"
+                        />
+                        <CardBody>
+                            <CardTitle tag="h5">
+                                Robotik el ile dokunma hissi
+                            </CardTitle>
+                            <CardText>
+                                Beyin Çipi Takılan Felçli Adam Robotik El ile “Dokunma Hissi” Kazanan İlk İnsan Oldu
+                            </CardText>
+                            <a href="https://www.biomedya.com/robotik-el-ile-dokunma-hissi" target="_" class="ln-button">...devamı</a>
+                        </CardBody>
                     </Card>
-                    <Card className="lastnews-card">
-                        <Card.Img variant="top" src="https://www.biomedya.com/uploads/haberler-2/shutterstock_1806981886.jpeg" />
-                        <Card.Body>
-                            <Card.Title>20 yıl önce dondurulan testis dokusunun hala canlı sperm üretebildiği keşfedildi</Card.Title>
-                            <Card.Text>
-                                Yeni yapılan bir araştırmada dondurulmuş testis dokusu 20 yıl sonra yeniden yerleştirilebilir halde bulundu. Dahası canlı sperm üretmeye devam edebiliyor.
-                            </Card.Text>
-                        </Card.Body>
-
+                    <Card>
+                        <CardImg
+                            alt="Card image cap"
+                            src="https://www.biomedya.com/uploads/images/articles/large/kisirlik.png"
+                            top
+                            width="100%"
+                        />
+                        <CardBody>
+                            <CardTitle tag="h5">
+                                3D yazıcılarla kısırlığa çözüm
+                            </CardTitle>
+                            <CardText>
+                                Üç boyutlu yazıcılarda üretilen biyo-protez fare yumurtalıklarının yerleştirildiği fareler sağlıklı yavrular dünyaya getirdi.
+                            </CardText>
+                            <a href="https://www.biomedya.com/3d-yazicilarla-kisirliga-cozum" target="_" class="ln-button">...devamı</a>
+                        </CardBody>
                     </Card>
-                    <Card className="lastnews-card">
-                        <Card.Img variant="top" src="https://www.biomedya.com/uploads/images/articles/large/insan-beyni-internet.jpg" />
-                        <Card.Body>
-                            <Card.Title>İnsan beyni ilk defa internete bağlandı!</Card.Title>
-                            <Card.Text>
-                                Dünya tarihinde ilk kez insan beyni direkt olarak internete bağlandı. Güney Afrika'da bulunan Wits Üniversitesi araştırmacıları tarih yazdı.
-                            </Card.Text>
-                        </Card.Body>
-
+                    <Card>
+                        <CardImg
+                            alt="Card image cap"
+                            src="https://www.biomedya.com/uploads/images/articles/large/bacaktan-alinan-fibula-kemiginden-gogsune-kemik-yapildi-3676-dhaphoto4-5mii_gk0y0wfm0xwf_hcwq.jpg"
+                            top
+                            width="100%"
+                        />
+                        <CardBody>
+                            <CardTitle tag="h5">
+                                Bacağından göğsüne kemik yapıldı
+                            </CardTitle>
+                            <CardText>
+                                Açık kalp ameliyatı sonucu göğüs kafesinin ön duvar kemiğinde enfeksiyon meydana gelen Muzaffer Ökten'in, sol bacağından fibula (baldır) kemiği alınıp göğüs kafesine yerleştirildi.
+                            </CardText>
+                            <a href="https://www.biomedya.com/bacagindan-gogsune-kemik-yapildi" target="_" class="ln-button">...devamı</a>
+                        </CardBody>
                     </Card>
                 </CardGroup>
-
             </Container>
         </div>
 

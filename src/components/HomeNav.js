@@ -1,33 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { Navbar, Container, Dropdown, Row, Col } from "react-bootstrap";
-import { useDispatch } from "react-redux";
-import { HomePage, notHomePage, ProductPage, ProductPageOff } from "../redux/actions/WebActions";
-import { useSelector } from "react-redux";
+import { Navbar, Container } from "react-bootstrap";
 
-import React, { useEffect } from 'react'
+
+import React from 'react'
 
 export default function HomeNav() {
-    const dispatch = useDispatch();
-
-    const [productsComponent] = useSelector((state) => [
-        state.WebAppReducer.productsComponent,
-    ]);
-
-
-    function productsComponentSwitch() {
-        if (productsComponent == "On") {
-            dispatch(ProductPageOff());
-            console.log("kapandi")
-        } else {
-            dispatch(ProductPage());
-            console.log("acildi")
-
-        }
-    }
-
-    useEffect(() => {
-        console.log(productsComponent)
-    }, [productsComponent])
 
 
     return (
@@ -39,13 +16,12 @@ export default function HomeNav() {
                         id="basic-navbar-nav"
                         className="justify-content-center"
                     >
-                        <NavLink onClick={() => { dispatch(HomePage()) }} className="homenav-navitem" to="/"> ANA SAYFA</NavLink>
-                        <NavLink onClick={() => { dispatch(notHomePage()) }} className="homenav-navitem" to="/about"> HAKKIMIZDA</NavLink>
-                        <NavLink onClick={() => { dispatch(notHomePage()) }} className="homenav-navitem" to="/certificates">BELGELERİMİZ</NavLink>
-                        <NavLink onClick={() => { productsComponentSwitch() }} className="homenav-navitem" to="#" >ÜRÜNLERİMİZ</NavLink>
-                        <NavLink onClick={() => { dispatch(notHomePage()) }} className="homenav-navitem" to="/services"> TEKNİK SERVİS </NavLink>
-                        <NavLink onClick={() => { dispatch(notHomePage()) }} className="homenav-navitem" target="blank" to="https://docdro.id/wXCkoVC">E-KATALOG</NavLink>
-                        <NavLink onClick={() => { dispatch(notHomePage()) }} className="homenav-navitem" to="/contact">İLETİŞİM</NavLink>
+                        <NavLink className="homenav-navitem" to="/about"> HAKKIMIZDA</NavLink>
+                        <NavLink className="homenav-navitem" to="/certificates">BELGELERİMİZ</NavLink>
+                        <NavLink className="homenav-navitem" to="/products" >ÜRÜNLERİMİZ</NavLink>
+                        <NavLink className="homenav-navitem" to="/services"> TEKNİK SERVİS </NavLink>
+                        <NavLink className="homenav-navitem" target="blank" to="https://docdro.id/wXCkoVC">E-KATALOG</NavLink>
+                        <NavLink className="homenav-navitem" to="/contact">İLETİŞİM</NavLink>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

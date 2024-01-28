@@ -6,6 +6,7 @@ import oks1 from "../media/oks1.JPG"
 import sol1 from "../media/sol1.JPG"
 import test1 from "../media/test1.JPG"
 // import aboutUs from "../media/aboutus.png"
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 
 
@@ -14,12 +15,23 @@ import test1 from "../media/test1.JPG"
 export default function Ventilator() {
     return (
         <div>
-            <div className="prod-header">
+            <div className="prod-header mb-3">
                 <p className="header-text">
                     VENTİLATOR ve YEDEK PARÇA AKSESUAR
                 </p>
             </div>
             <Container>
+                <div>
+                    <Breadcrumb>
+                        <Breadcrumb.Item href="/">ANASAYFA</Breadcrumb.Item>
+                        <Breadcrumb.Item href="/products">
+                            ÜRÜNLERİMİZ
+                        </Breadcrumb.Item>
+                        <Breadcrumb.Item active href="#">
+                            VENTILATOR
+                        </Breadcrumb.Item>
+                    </Breadcrumb>
+                </div>
                 <Row className="">
                     <Col className="prod-rows" xs={6} lg={3}>
                         <Image className='prod-images' src={flow1} thumbnail />

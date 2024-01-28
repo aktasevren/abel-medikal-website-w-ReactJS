@@ -1,4 +1,4 @@
-import {  Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 
 
 export default function Footer() {
@@ -62,7 +62,7 @@ export default function Footer() {
                             <span >info@abelmedikal.com</span>
                         </p>
                     </Col>
-                    <div className="text-center">© Copyright 2023 - Abel Health Care Medikal - All Rights Reserved</div>
+                    <div className="text-center">© Copyright 2024 - Abel Health Care Medikal - All Rights Reserved</div>
                 </Row>
                 <div className="text-center designedby">
                     Designed by evrenaktas

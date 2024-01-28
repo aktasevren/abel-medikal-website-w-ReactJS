@@ -1,4 +1,4 @@
-import { Navbar, Nav, Container } from "react-bootstrap"
+import { Navbar, Nav, Container, Row, Col } from "react-bootstrap"
 import logoAbel from "../media/logo-text.png"
 
 export default function HomeNavbar() {
@@ -10,10 +10,6 @@ export default function HomeNavbar() {
                         <img alt="logo" className="homenavbar-logo" src={logoAbel} />
                     </Navbar.Brand>
                     <Nav className="homenavbar-nav">
-                        {/* <Nav.Link>
-                            <img alt="tel-icon" src="https://cdn-icons-png.flaticon.com/512/126/126523.png" className="homenavbar-icon" />
-                            <span className="homenavbar-text">+90 533 522 87 91</span>
-                        </Nav.Link> */}
                         <div className="mailto-div hn-mailicon">
                             <img alt="mail-icon" src="https://icons.veryicon.com/png/o/miscellaneous/practical-life-icon/mail-255.png"
                                 className="homenavbar-icon " />
@@ -37,6 +33,7 @@ export default function HomeNavbar() {
                 </Container>
             </Navbar>
         </div>
+
     )
 }
 

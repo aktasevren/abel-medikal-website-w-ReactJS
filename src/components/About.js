@@ -1,12 +1,8 @@
-
 import { Row, Col, Container } from "react-bootstrap"
-
 import React from "react";
 
 
 export default function About() {
-
-
     return (
         <div>
             <div className="prod-header">

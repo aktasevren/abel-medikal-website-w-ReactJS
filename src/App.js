@@ -3,41 +3,42 @@
 import About from "./components/About"
 import Certificates from "./components/Certificates"
 import Contact from "./components/Contact"
-// import Products from "./components/Products"
-// import Product from "./components/Product"
 import Services from "./components/Services"
 import Home from "./components/Home"
 import Ventilator from "./components/Ventilator"
-
+import HomeNavbar from './components/HomeNavbar';
+import HomeNav from './components/HomeNav';
+import Footer from './components/Footer';
+import Product from './components/Product';
 
 import {
+  BrowserRouter,
+  Routes,
   Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
 } from "react-router-dom";
 
 
-
-const router1 = createBrowserRouter(
-  createRoutesFromElements(
-    /* Wrap this Root Route to create Router here */
-    <Route path="/" element={<Home />}>
-      <Route path="/about" element={<About />} />
-      <Route path="/certificates" element={<Certificates />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/ventilator" element={<Ventilator />} />
-      <Route path="/contact" element={<Contact />} />
-    </Route>
-  )
-);
-
-
 function App() {
-
-
   return (
-    <RouterProvider router={router1} />
+    <div>
+      <BrowserRouter>
+        <HomeNavbar />
+        <hr></hr>
+        <HomeNav />
+        <hr></hr>
+        <Routes >
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/certificates" element={<Certificates />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/products" element={<Product />} />
+          <Route path="/products/ventilator" element={<Ventilator />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <hr></hr>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
